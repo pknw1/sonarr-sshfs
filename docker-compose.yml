@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+
+  radarr:
+    container_name: "sonarr"
+    image: pknw1/sonarr-sshfs:latest
+    restart: unless-stopped
+    dns: 8.8.8.8
+    privileged: true
