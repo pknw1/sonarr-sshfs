@@ -1,1 +1,6 @@
-echo ok
+#!/bin/sh
+
+#echo "Hello" > /sys/fs/cgroup/aaa
+
+#exit $?
+

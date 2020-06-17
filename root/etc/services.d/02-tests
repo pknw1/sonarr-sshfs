@@ -1,5 +1,0 @@
-#!/bin/bash
-ls -l /root
-ls -l /root/.ssh/
-mount 
-ls -l /dev/
