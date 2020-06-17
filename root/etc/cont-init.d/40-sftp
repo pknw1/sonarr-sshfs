@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bash
 
-echo $SSH | base64 -d -w0 >> /root/.ssh/id_rsa
+echo $SSH | base64 -d -w0 >> /root/smb.conf
+chmod 600 /root/smb.conf
+echo $SSH | base64 -d -w0 >> /etc/.ssh/id_rsa
 chmod 600 /root/.ssh/id_rsa
 sshfs ks.pknw1.co.uk:/home/media /mnt  -o "StrictHostKeyChecking=no" -o allow_other

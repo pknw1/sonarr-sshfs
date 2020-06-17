@@ -1,0 +1,3 @@
+#!/bin/bash
+#mount -t cifs -o vers=1.0,credentials=/root/smb.cred //ks.pknw1.co.uk/home/media /media/
+sshfs ks.pknw1.co.uk:/home/media /mnt  -o "StrictHostKeyChecking=no" -o allow_other
